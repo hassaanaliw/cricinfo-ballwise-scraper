@@ -22,7 +22,6 @@ def find_in_list(name_list, name):
 
 # Read in match data
 all_matches = pd.read_excel('convert.xlsx')
-all_matches = all_matches[pd.isnull(all_matches['note'])]
 
 for index, match in all_matches.iterrows():
     q = 1
